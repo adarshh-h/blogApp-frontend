@@ -21,7 +21,7 @@ export default function Header() {
     });
   }, []);
  function logout(){
-    fetch('http://localhost:8000/logout',{
+    fetch('https://blog-app-six-blush.vercel.app/logout',{
         credentials: 'include',
         method:"POST",
 
