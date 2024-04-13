@@ -7,7 +7,7 @@ export default function RegisterPage() {
 
   async function register(ev) {
     ev.preventDefault();
-    const response = await fetch('https://blog-app-six-blush.vercel.app/register',{
+    const response = await fetch('https://blogapp-1-3glq.onrender.com/register',{
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
