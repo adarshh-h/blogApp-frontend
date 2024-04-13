@@ -12,7 +12,7 @@ export default function Header() {
  const {setUserInfo,userInfo}=useContext(UserContext);
   useEffect(() => {
 
-    fetch("https://blog-app-six-blush.vercel.app/profile", {
+    fetch("https://blogapp-1-3glq.onrender.com/profile", {
       credentials: 'include',
     }).then(response => {
       response.json().then(userInfo => {
@@ -21,7 +21,7 @@ export default function Header() {
     });
   }, []);
  function logout(){
-    fetch('https://blog-app-six-blush.vercel.app/logout',{
+    fetch('https://blogapp-1-3glq.onrender.com/logout',{
         credentials: 'include',
         method:"POST",
 
