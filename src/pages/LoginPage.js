@@ -12,7 +12,7 @@ export default function LoginPage() {
 
   async function login(ev) {
     ev.preventDefault();
-    const response = await fetch("https://blog-app-six-blush.vercel.app/login", {
+    const response = await fetch("https://blogapp-1-3glq.onrender.com/login", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
