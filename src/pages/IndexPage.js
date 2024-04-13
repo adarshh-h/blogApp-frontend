@@ -4,7 +4,7 @@ import Post from "../Post";
 export default function IndexPage() {
 const [posts,setPosts]=useState([]);
   useEffect(() => {
-    fetch('https://blog-app-six-blush.vercel.app/post').then(response=>{
+    fetch('https://blogapp-1-3glq.onrender.com/post').then(response=>{
         response.json().then(posts=>{
             setPosts(posts);
         });
