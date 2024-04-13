@@ -7,7 +7,7 @@ export default function PostPage() {
   const [postInfo, setPostInfo] = useState(null);
   const { userInfo } = useContext(UserContext);
   useEffect(() => {
-    fetch(`https://blog-app-six-blush.vercel.app/post/${id}`).then((response) => {
+    fetch(`https://blogapp-1-3glq.onrender.com/post/${id}`).then((response) => {
       response.json().then((postInfo) => {
         setPostInfo(postInfo);
       });
@@ -42,7 +42,7 @@ export default function PostPage() {
         </div>
       )}
       <div className="image">
-        <img src={`https://blog-app-six-blush.vercel.app/${postInfo.cover}`} alt="" />
+        <img src={`https://blogapp-1-3glq.onrender.com/${postInfo.cover}`} alt="" />
       </div>
 
       <div
